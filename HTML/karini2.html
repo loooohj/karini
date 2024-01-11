@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title> karini</title>
+        <link rel="stylesheet"  href="../CSS/karini2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+        <script src="../JS/karini2.js"></script>
+    </head>
+
+
+    <body>
+        
+        <header class="navbar">
+            <h1 class="titre">Kar<span style="color:#EAB69F;text-decoration: underline;">ini</span></h1> 
+            
+            
+            <nav>
+                <a href="../index.html#s1">Acceuil</a>
+                <a href="../index.html#s2">Qui nous sommes?</a>
+                <a href="../index.html#s5">Contact</a>
+                <a href="../index.html#s3" onclick="hide_form2()">Déconnexion</a>
+            </nav>
+
+
+        </header>
+        <h3 style="color:grey;margin-top:10%;background-color:white;border-radius: 5px;display: inline-block;padding:2%;padding-left: 6%;margin-left: 20%;">Si vous voulez échanger votre apprentissage, cliquer sur <a href="karini3.html" style="color: grey;">AJOUTER UNE SESSION</a></h3>
+        <div style="background-color:transparent ;height: 1000px;border-radius: 15%;box-shadow: 0 5px 8px grey;">
+        <div class="container">
+            <div class="card">
+                <div class="card-top">
+                    <img src="../IMAGES/personne1.png" class="p1" alt="">
+                </div>
+                <br>
+                <div class="card-infos">
+                    <h2 class="name">Sami Trabelsi</h2>
+                    <h3 class="university">ISI ARIANA</h3>
+                    <p class="course">" JAVA: Héritage, Notion de classe, les Exceptions... "</p>
+                </div>
+
+                <div class="contact">
+                        <button  onclick="open_details()">Détails</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <img src="../IMAGES/personne3.png" class="p1" alt="">
+                </div>
+                <br>
+                <div class="card-infos">
+                    <h2 class="name">Amin Allagui</h2>
+                    <h3 class="university">ISG TUNIS</h3>
+                    <p class="course">"Maitrisez les différents types de diagrammes pour la conception! "</p>
+                </div>
+
+                <div class="contact">
+                        <button>Détails</button>
+                </div>
+            </div>
+             <div class="card">
+                    <div class="card-top">
+                        <img src="../IMAGES/personne2.png" class="p1" alt="">
+                    </div>
+                    <br>
+                    <div class="card-infos">
+                        <h2 class="name">Ella Saidi</h2>
+                        <h3 class="university">IHE CARTHAGE</h3>
+                        <p class="course">"Comment écrire des requetes SQL ! "</p>
+                    </div>
+    
+                    <div class="contact">
+                            <button>Détails</button>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <img src="../IMAGES/personne4.png" class="p1" alt="">
+                </div>
+                <br>
+                <div class="card-infos">
+                    <h2 class="name">Adem Sahbi</h2>
+                    <h3 class="university">ESSEC MONFLEURY</h3>
+                    <p class="course">" HTML & CSS"</p>
+                </div>
+
+                <div class="contact">
+                        <button>Détails</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-top">
+                    <img src="../IMAGES/personne5.png" class="p1" alt="">
+                </div>
+                <br>
+                <div class="card-infos">
+                    <h2 class="name">Ibrahim Saoudi</h2>
+                    <h3 class="university">ISG BIZERTE</h3>
+                    <p class="course">"Exercices corrigés sur Stat Inf "</p>
+                </div>
+
+                <div class="contact">
+                        <button>Détails</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <img src="../IMAGES/personne6.png" class="p1" alt="">
+                </div>
+                <br>
+                <div class="card-infos">
+                    <h2 class="name">Kawthar Manani</h2>
+                    <h3 class="university">ISI ARIANA</h3>
+                    <p class="course">"Différencier entre les différents algorithmes de recherches "</p>
+                </div>
+
+                <div class="contact">
+                        <button>Détails</button>
+                </div>
+            </div>
+             <div class="card">
+                    <div class="card-top">
+                        <img src="../IMAGES/personne7.png" class="p1" alt="">
+                    </div>
+                    <br>
+                    <div class="card-infos">
+                        <h2 class="name">Ilef Brahmi</h2>
+                        <h3 class="university">ISSAT MATEUR</h3>
+                        <p class="course">"Corriger ensemble des exercices compléxité algorithmiques "</p>
+                    </div>
+    
+                    <div class="contact">
+                            <button>Détails</button>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <img src="../IMAGES/personne8.png" class="p1" alt="">
+                </div>
+                <br>
+                <div class="card-infos">
+                    <h2 class="name">Yaakoub Torchi</h2>
+                    <h3 class="university">ESEN MANOUBA</h3>
+                    <p class="course">"PHP"</p>
+                </div>
+
+                <div class="contact">
+                        <button>Détails</button>
+                </div>
+                
+            </div>
+        </div>  
+        
+    </div>
+        <div id="popup_overlay">
+            <div class="popup_contenu">
+                <div class="top">
+                    <img src="../IMAGES/personne1.png">
+                </div>
+            <span class="ligne">
+                <span style="font-size: x-large;">&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   <strong style="color: rgb(90,90,90);text-decoration: underline;">Les Sessions:</strong><span style="color: #EAB69F;"><br><br>
+                    1/Syntaxe du langage JAVA<br>
+                    2/Notion de classe<br>             
+                    3/Notion des tableaux et la classe String<br>
+                    4/Héritage <br>5/Exception</span></span>
+                <span class="ligne_verticale" style="margin-left: 25%;"></span>
+                <span style="font-size: x-large;"><strong style="color: rgb(90,90,90);text-decoration: underline;margin-right: -100%;">&nbsp;&nbsp;Numéro du &nbsp;&nbsp;téléphone:</strong> <br> <br> &nbsp;&nbsp;<span style="color: #EAB69F;">50 623 219</span><br></span><br><br><br>
+                <div style="font-size: x-large;display: block;"> &nbsp;&nbsp;<strong style="color: rgb(90,90,90);text-decoration: underline;">Prix d'une &nbsp;&nbsp;<span style="text-decoration:underline;">session:</strong><br><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #EAB69F;">10D</span></div>
+            </span>
+            <a href="https://meet.google.com/bba-tgpy-pri" style="position: relative;top: 32%;left:43%;font-size: x-large;color:rgb(90,90,90);" target="-blank">Lien Meet</a>
+            <button style="top: 37%;position: relative;left:30% ;">Confirmation</button>
+            </div>
+            <button style="border: 0;" class="popup_exit" onclick="open_details() ">
+                ×
+            </button>  
+            
+        </div>
+        <footer id="s5">
+            <div class="social-media2">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <div>
+            <div class="fotter_bottom">
+                <p class="copyright" style="padding-top: 1%;color: black;" >Copyright &copy 2024;Site réalisé par: Zaki Touati Molka G6 - Hajlaoui Lobna G6</p>
+            </div>
+        </footer>
+        
+        </body>

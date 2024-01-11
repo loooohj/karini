@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title> karini</title>
+        <link rel="stylesheet"  href="../CSS/karini3.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <script src="../JS/karini2.js"></script>
+        <script src="../JS/karini3.js"></script>
+
+    </head>
+    <body>
+        
+        <header class="navbar">
+            <h1 class="titre">Kar<span style="color:#EAB69F;text-decoration: underline;">ini</span></h1> 
+            
+            
+            <nav>
+                <a href="../index.html#s1">Acceuil</a>
+                <a href="../index.html#s2">Qui nous sommes?</a>
+                <a href="../index.html#s5">Contact</a>
+                <a href="../index.html#s3" onclick="hide_form2()">Déconnexion</a>
+            </nav>
+
+
+        </header>
+        
+            <article>
+            <form class="f3">
+                <div class="input_box">
+                    <input type="text" required><br>
+                    <label>Description de la Session</label>
+                </div>
+                       
+            </form>
+            <form class="f3_1">
+                <div style="display: flex;">
+            <div class="input_box" style="margin-left: 10%;">
+                <input type="text" required class="i1"><br>
+                <label>Nom de la matière</label>
+            </div>
+            <div class="input_box" style="margin-left: 30%;margin-right: 10%;">
+                <input type="text" required class="i2"><br>
+                <label>Prix d'une séance</label>
+            </div>
+        </div>
+            <input type="button" value="+ Ajouter une séance" id="button" onclick="afficher()" ><br>
+            <input type="text" placeholder="Séance" class="sc" id="sc1"  style="display: none;"><br>
+            <input type="text" placeholder="Séance" class="sc" id="sc2"  style="display: none;"><br>
+            <input type="text" placeholder="Séance" class="sc" id="sc3"  style="display: none;"><br>
+            <input type="text" placeholder="Séance" class="sc" id="sc4"  style="display: none;"><br>
+            <input type="text" placeholder="Séance" class="sc" id="sc5"  style="display: none;"><br>
+            <input type="text" placeholder="Séance" class="sc" id="sc6"  style="display: none;"><br>
+            <div class="input_box" id="ib">
+                <input type="text" required class="i3"><br>
+                <label>Lien de rencontre</label>
+            </div>
+            </form>
+        </article>
+        <footer id="s5">
+            <div class="social-media2">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <div>
+            <div class="fotter_bottom">
+                <p class="copyright" style="padding-top: 1%;color: black;" >Copyright &copy 2024;Site réalisé par: Zaki Touati Molka G6 - Hajlaoui Lobna G6</p>
+            </div>
+        </footer>
+    </body>

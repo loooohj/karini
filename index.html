@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title> karini</title>
+        <link rel="stylesheet"  href="CSS/karini.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <script src="JS/karini.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+    <body>
+        <header class="navbar">
+            <h1 class="titre">Kar<span style="color:#EAB69F;text-decoration: underline;">ini</span></h1> 
+            <nav>
+                <a href="#s1">Acceuil</a>
+                <a href="#s2">Qui nous sommes?</a>
+                <a href="#s5">Contact</a>
+                <a href="#s3" onclick="hide_form2()">Connectez-vous</a>
+                <img src="IMAGES/menu.png" class="menu" alt="menu">
+            </nav>
+
+        </header>
+        
+        <section id="s1">
+           
+           
+            <span class="description">
+                <h1>Transformez votre <span style="color:#EAB69F;">apprentissage</span> <br>en une expérience inspirante et <span style="color:#EAB69F;">collaborative.</span></h1>
+                <a href="#s2" id="explorer" style="text-decoration: none;">Explorer &#8594</a>
+            </span>
+
+
+            <img src="images/education1.jpg" style="border-radius: 20%;">
+
+
+        </section>
+    <br><br><br>
+        
+        <section id="s2">
+            <div id="s1_1">
+            <img src="images/education2.jpg" class="img2">
+            
+            
+            <span class="description2">
+                <br>
+                Karini offre une communauté d'apprentissage collaborative où les collègues peuvent accéder à des ressources académiques de qualité, échanger des idées et travailler ensemble pour atteindre l'excellence dans leurs études supérieures.
+                <br>si vous voulez rejoindre cette communauté,<br><br> <a style="cursor: pointer;color: #EAB69F;" href="#s4" onclick="hide_form1()">inscrivez-vous</a>&nbsp;OU&nbsp;<a style="cursor:pointer;color: #EAB69F;" href="#s3" onclick="hide_form2()">connectez-vous</a>
+            </span>
+       
+        
+        </section>
+
+<br><br><br>
+        <section id="s3">
+            <br><br>
+        <form id="f1" action="HTML/karini2.html">
+            <h2 style="color: #EAB69F;">Se connecter</h2>
+            <br>
+            <div class="social-media">
+             <i class="fa-brands fa-google"></i>&nbsp;&nbsp;
+             <i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;
+             <i class="fa-brands fa-facebook"></i>&nbsp; &nbsp;
+
+             <i class="fa-brands fa-twitter"></i>
+            </div>
+            <br>
+            <p>ou utiliser mon adresse e-mail</p>
+            <div class="inputs">
+            <input type="email" placeholder="Email" id="e1" required>
+            <br><br>
+            <input type="password" placeholder="Mot de passe" required>
+            <br><br><br>
+             <button type="submit" style="text-decoration: none;color: white;cursor: pointer;">connecter</button>
+        </div> 
+        </form>
+        <br><br><br>
+        </section>
+<section id="s4">
+    <form id="f2" style="display: none;" action="HTML/karini2.html" onsubmit="return confirmation()"><!--onclick alaa button o onsubmit alaa form-->
+        <span style="display: flex;"><img src="IMAGES/photo-avatar-profil.png" alt="photo de profile" title="photo de profile" id="pdp">
+        <input type="file" id="ajouter_photo1">
+        <label for="ajouter_photo1" id="ajouter_photo2" onclick="ajouter()"><i class="fas fa-plus" id="plus"></i></label>   
+        <h2  style="color: #EAB69F;text-align: center;margin-left: 35%;">S'inscrire</h2></span><br>
+       <input type="text" placeholder="Nom" id="n1" required >
+       <input type="text" placeholder="Niveau d'éducation actuel" required> 
+       <input type="password" placeholder="Mot de passe" id="mdp" required ><br><br>
+       <span style="font-size: 80%;color: gray;margin-left: 6%;">Le nom doit comporter seulement des lettres</span><br><span style="font-size: 80%;color: gray;margin-left: 6%;">(au moins 3 lettres).</span><span class="validator-criters" style="margin-left: 55%;"><span class="chiffre" style="font-size: 80%;margin-right: -50%;color: gray;"><i class="far fa-check-circle"></i>&nbsp; Votre mot de passe doit avoir un chiffre.</span><br><span class="majuscule" style="font-size: 80%;margin-right: -50%;color: gray;margin-left: 72%;"><i class="far fa-check-circle"></i>&nbsp;Votre mot de passe doit avoir une majuscule.</span><br><span class="miniscule" style="font-size: 80%;margin-right: -50%;color: gray;margin-left: 72%;"><i class="far fa-check-circle"></i>&nbsp;Votre mot de passe doit avoir une miniscule.</span><br><span class="miniscule" style="font-size: 80%;margin-right: -50%;color: gray;margin-left: 72%;"><i class="far fa-check-circle"></i>&nbsp;Votre mot de passe doit avoir un caractère <span style="margin-right: -50%;color: gray;margin-left: 72%;">spécial</span>.</span></span> 
+       <br><br><br><br>
+       <input type="text" placeholder="Prénom" id="p1" required >
+       <input type="text" placeholder="Spécialité" >
+       <input type="password" placeholder="Confirmation de mot de passe" id="cmdp" name="password" required ><br><br>
+       <span style="font-size: 80%;color: gray;margin-left: 6%;">Le prénom doit comporter seulement des lettres</span><br><span style="font-size: 80%;color: gray;margin-left: 6%;">(au moins 3 lettres).</span><br><br><br><br>
+       <input type="email" placeholder="Email" required >
+       <input type="text" placeholder="Etablissement universitaire" required >
+       <input type="tel" pattern="[0-9]{8}" placeholder="Téléphone" required >
+       <button type="submit" style="margin-left:25% ;cursor: pointer;">S'inscrire</button>
+       <button type="reset" style="margin-left: 25%;cursor: pointer;">Annuler</button>
+    </form>
+    <br><br>
+</section>
+<footer id="s5">
+    <div class="social-media2">
+<a href=""><i class="fa-brands fa-facebook"></i></a>
+<a href=""><i class="fa-brands fa-instagram"></i></a>
+<a href=""><i class="fa-brands fa-twitter"></i></a>
+<a href=""><i class="fa-brands fa-whatsapp"></i></a>
+<div>
+    <div class="fotter_bottom">
+        <p class="copyright" style="padding-top: 1%;color: black;" >Copyright &copy 2024;Site réalisé par: Zaki Touati Molka G6 - Hajlaoui Lobna G6</p>
+    </div>
+</footer>
+</body>
+</html>
